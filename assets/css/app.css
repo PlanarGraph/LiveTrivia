@@ -1,0 +1,309 @@
+/* This file is for your main application css. */
+
+@import "./phoenix.css";
+
+html {
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
+.welcome-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    color: lightskyblue;
+}
+
+.welcome-join {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: lightskyblue;
+}
+
+.welcome-join div {
+    color: white;
+}
+
+.welcome-button button {
+    background-color: skyblue;
+    color: black;
+    border-color: steelblue;
+    border-style: outset;
+    font-size: xx-large;
+}
+
+.loading {
+    font-size: 500%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: steelblue;
+    height: 100vh;
+    width: 98.75vw;
+    border-style: double;
+    border-color: black;
+    color: white;
+}
+
+.question {
+    display: flex;
+    justify-content: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 70%;
+    margin-left: 2vw;
+    margin-top: 1vh;
+    font-size: 35pt;
+}
+
+.question div {
+    color: white;
+}
+
+.answers-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    background-color: navy;
+    color: white;
+    font-size: 30pt;
+}
+
+.answer {
+    border-style: inset;
+    border-color: skyblue;
+    text-indent: 10px;
+}
+
+.solution {
+    border-style: solid;
+    text-indent: 10px;
+    background-color: green;
+}
+
+.locked-in {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: xx-large;
+}
+
+.locked-in div {
+    margin-right: 2rem;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    border-style: outset;
+    border-color: skyblue;
+    background-color: steelblue;
+    height: 40vh;
+}
+
+.time {
+    margin: 5rem;
+    margin-right: 15rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 75pt;
+    color: white;
+    height: fit-content;
+}
+
+.multiple {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.player-correct {
+    background-color: green;
+    height: 100vh;
+    width: 96vw;
+}
+
+.player-incorrect {
+    background-color: red;
+    height: 100vh;
+    width: 96vw;
+}
+
+.player-question {
+    display: flex;
+    flex-direction: column;
+    /*height: 100vh;
+    width: 96vw;*/
+    /*background-color: lightgray;*/
+    /*border-style: double;*/
+    border-color: white;
+}
+
+.p-question {
+    font-size: x-large;
+    border-bottom: solid;
+    border-color: skyblue;
+    color: white;
+    border-style: double;
+    background-color: steelblue;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.p-answer {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.p-answer input[type="radio"] {
+    display: none;
+}
+
+.p-answer label {
+    font-size: xx-large;
+    background-color: silver;
+    border-radius: 10px;
+    border-style: outset;
+    border-color: black;
+    text-indent: 10px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.p-answer input[type="radio"]:checked+label {
+    background-color: rgb(112, 112, 112);
+    border-color: steelblue;
+    color: skyblue;
+    border-style: groove;
+}
+
+.p-answer button[type="submit"] {
+    font-size: xx-large;
+    height: 10vh;    
+    align-self: center;
+    margin-left: 45%;
+    width: 50vw;
+    background-color: skyblue;
+    color: black;
+    border-color: steelblue;
+    border-style: outset;
+}
+
+.p-answer button[type="submit"]:hover {
+    background-color: darkgrey;
+}
+
+.p-lockin {
+    font-size: xx-large;
+    color: lightskyblue;
+}
+
+.p-lockin-answer {
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 20%;
+    color: lightskyblue;
+}
+
+.p-waiting-background {
+    background-color: steelblue;
+    height: 100vh;
+    width: 96vw;
+    border-style: double;
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+}
+
+.p-waiting-background div {
+    margin-top: 25vh;
+}
+
+.player-first {
+    background-color: goldenrod;
+    height: 100vh;
+    width: 96vw;
+    border-style: double;
+    border-color: black;
+}
+
+.player-second {
+    background-color: silver;
+    height: 100vh;
+    width: 96vw;
+    border-style: ridge;
+    border-color: black;
+}
+
+.player-third {
+    background-color: #cd7f32;
+    height: 100vh;
+    width: 96vw;
+    border-style: dashed;
+    border-color: black;
+}
+
+.player-login {
+    font-size: xx-large;
+    color: lightskyblue;
+}
+
+.player-login input {
+    font-size: x-large;
+    height: fit-content;
+    border-color: black;
+    background-color: lightgray;
+}
+
+.player-login button {
+    font-size: x-large;
+    height: 10vh;
+    width: 50%;
+    margin-left: 50%;
+    margin-top: 2vh;
+    background-color: skyblue;
+    color: black;
+    border-color: steelblue;
+    border-style: outset;
+}
+
+.p-name {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.p-score {
+    font-size: x-large;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.p-place {
+    margin-top: 40%;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.display-score-header {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    color: lightskyblue;
+}
+
+.display-score {
+    font-size: 40pt;
+    text-align: center;
+    color: lightskyblue;
+}
+
+.display-winner-header {
+    font-size: 50pt;
+    color: gold;
+    justify-content: center;
+    text-align: center;
+}
