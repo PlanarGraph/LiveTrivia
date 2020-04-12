@@ -1,19 +1,11 @@
 # LiveTrivia
 
-To start your Phoenix server:
+To start the Phoenix server:
 
   * Install dependencies with `mix deps.get`
   * Install Node.js dependencies with `cd assets && npm install`
   * Start Phoenix endpoint with `mix phx.server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Visit [`localhost:4000/display/{id}`](http://localhost:4000/display) to display the game, where `{id}` is an arbitrary room id chosen by the host.
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+Players can then join the game by visiting the displayed link (usually of the form `{ip-addr}:4000/play`) on their computers or mobile devices, which will then prompt them to enter their name and the room id.
